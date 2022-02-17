@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +19,13 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [LoginController::class, 'index']);
-Route::get('/dashboard', [DashboardController::class, 'index']);
+
+Route::group([
+    'prefix' => 'harta',
+    'namespace' => 'Harta',
+    'as' => 'harta.'
+    ],function () {
+        Route::resource('dashboard', DashboardController::class);
+        Route::resource('laporan', LaporanController::class);
+});
+
