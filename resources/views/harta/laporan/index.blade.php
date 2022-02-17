@@ -4,10 +4,13 @@
                     <!--Grid Form-->
 
                     <div class="flex flex-1  flex-col md:flex-row lg:flex-row mx-2">
-                        <div class="mb-2 border-solid border-gray-300 rounded border shadow-sm w-full">
+                        <div class="grid grid-rows-4 grid-flow-col gap-4 mb-2 border-solid border-gray-300 rounded border shadow-sm w-full">
                             <div class="bg-gray-200 px-2 py-3 border-solid border-gray-200 border-b">
                                 Daftar Laporan
                             </div>
+                            <a href="#" class="m-2 mt-2 bg-green-500 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
+                                Laporan Baru
+                            </a>
                             <div class="p-3">
                                 <table class="table-responsive w-full rounded">
                                     <thead>
